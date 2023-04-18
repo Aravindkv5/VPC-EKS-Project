@@ -23,13 +23,3 @@ variable "STAGE" {
   default = "Environment"
   description = "Stage for deployment"
 }
-
-variable "access_key" {
-  default = "AKIA2CBIYZAZ6ONRU7FO"
-
-}
-
-variable "secret_key" {
-  default = "zKnpYs2y6dYRHFiBVJ3NqLTYh8Ity0LPH5Zzc8m9"
-  
-}
