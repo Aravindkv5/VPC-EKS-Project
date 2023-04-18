@@ -47,8 +47,8 @@ resource "aws_iam_role_policy_attachment" "AmazonEKS_CNI_Policy" {
 resource "aws_eks_node_group" "node" {
     cluster_name = aws_eks_cluster.aws_eks.name
     node_group_name = "DEMO-Test"
-    #node_role_arn = aws_iam_role.eks_nodes.role_arn
-    subnets_ids = ["subnet-0925b04d79caa625a","subnet-0adf449365f26d140"]
+    node_role_arn = "arn:aws:iam::691575244851:role/EKS"
+    subnet_ids = ["subnet-0925b04d79caa625a","subnet-0adf449365f26d140"]
     tags = {
         Name = "Mohanram"
     }
