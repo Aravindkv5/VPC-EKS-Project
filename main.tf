@@ -27,17 +27,10 @@ module "create_ap-south-2" {
   }
 }
 
-#Creation of EKS 
+#Creation of EKS in Mumbai
 module "eks"{
-  source = "./modules/vpc"
-  cidr_block      = var.cidr_block
-  public_subnets  = var.public_subnets
-  private_subnets = var.private_subnets
-  DEFAULT_TAGS    = var.DEFAULT_TAGS
-  STAGE           = "Environment"
-  
+  source = "./modules/EKS"
+  cluster_name =  "test"
 
-  providers = {
-    aws.vpc_region = aws.Mumbai
-  }
+
 }
