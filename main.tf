@@ -42,3 +42,19 @@ module "eks"{
 
 
 }
+
+#Creation of EKS in Hyderabad
+module "eks"{
+  source = "./modules/EKS"
+  cluster_name =  "test"
+  providers = {
+    aws.vpc_region = aws.Hyderabad
+  }
+
+  #aws_iam_role = "trial"
+  #aws_eks_node = "EKS"
+  
+  
+
+
+}
