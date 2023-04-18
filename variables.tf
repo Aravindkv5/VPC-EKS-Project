@@ -12,3 +12,8 @@ variable "private_subnets" {
   type = map(list(string))
   description = "List of private subnet cidrs"
 }
+
+variable "STAGE" {
+  type = string
+  description = "Stage for deployment"
+}
