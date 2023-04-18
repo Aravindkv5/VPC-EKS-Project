@@ -31,8 +31,8 @@ module "create_ap-south-2" {
 module "eks"{
   source = "./modules/EKS"
   cluster_name =  "test"
-  aws_iam_role = "trial"
-  aws_eks_node = "EKS"
+  #aws_iam_role = "trial"
+  #aws_eks_node = "EKS"
   
 
 
