@@ -23,7 +23,7 @@ resource "aws_eks_cluster" "aws_eks" {
       
     }
     tags = {
-      Name = aws_iam_role.eks_cluster.name
+      Name = "Mohanram"
     }
 
   
