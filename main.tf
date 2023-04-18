@@ -35,7 +35,7 @@ module "eks"{
   private_subnets = var.private_subnets
   DEFAULT_TAGS    = var.DEFAULT_TAGS
   STAGE           = "Environment"
-  cluster_name = "test"
+  
 
   providers = {
     aws.vpc_region = aws.Mumbai
