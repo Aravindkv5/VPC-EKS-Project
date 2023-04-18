@@ -6,7 +6,7 @@ module "create_ap-south-1" {
   public_subnets  = var.public_subnets
   private_subnets = var.private_subnets
   DEFAULT_TAGS    = var.DEFAULT_TAGS
-  STAGE           = var.STAGE
+  STAGE           = "Environment"
     
   providers = {
     aws.vpc_region = aws.Mumbai

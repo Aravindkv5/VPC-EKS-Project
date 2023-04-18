@@ -13,3 +13,13 @@ variable "private_subnets" {
   description = "List of private subnet cidrs"
 }
 
+variable "DEFAULT_TAGS" {
+  type = map(any)
+  description = "Default Tags for all resources"
+}
+
+variable "STAGE" {
+  type = string
+  default = "Environment"
+  description = "Stage for deployment"
+}
