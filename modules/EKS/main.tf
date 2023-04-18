@@ -1,4 +1,6 @@
-
+providers = {
+    region = "ap-south-1"
+  }
 
 # resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy" {
 #     policy_arn  = "arn:aws:iam::691575244851:role/EKS-Cluster"
