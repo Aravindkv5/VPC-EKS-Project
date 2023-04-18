@@ -31,6 +31,10 @@ module "create_ap-south-2" {
 module "eks"{
   source = "./modules/EKS"
   cluster_name =  "test"
+  providers = {
+    aws.vpc_region = aws.Mumbai
+  }
+
   #aws_iam_role = "trial"
   #aws_eks_node = "EKS"
   

@@ -1,7 +1,11 @@
-providers = {
-    region = "ap-south-1"
+terraform {
+  required_providers {
+    aws = {
+      source                = "hashicorp/aws"
+      configuration_aliases = [aws.vpc_region]
+    }
   }
-
+}
 # resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy" {
 #     policy_arn  = "arn:aws:iam::691575244851:role/EKS-Cluster"
 #     role = aws_iam_role.eks_cluster.name
