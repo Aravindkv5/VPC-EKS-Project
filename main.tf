@@ -33,9 +33,7 @@ module "eks"{
   cluster_name =  "test"
   #aws_iam_role = "trial"
   #aws_eks_node = "EKS"
-  providers = {
-    region = "ap-south-1"
-  }
+  
   
 
 
