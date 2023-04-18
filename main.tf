@@ -1,7 +1,7 @@
 
 # Creation for ap-south-1
 module "create_ap-south-1" {
-  source          = "./modules/vpc"
+  source          = "modules/vpc"
   cidr_block      = var.cidr_block
   public_subnets  = var.public_subnets
   private_subnets = var.private_subnets
