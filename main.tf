@@ -34,7 +34,7 @@ module "eks"{
   #aws_iam_role = "trial"
   #aws_eks_node = "EKS"
   providers = {
-    region = aws.Mumbai
+    region = "ap-south-1"
   }
   
 
