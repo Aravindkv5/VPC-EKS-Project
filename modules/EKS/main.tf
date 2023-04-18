@@ -15,7 +15,7 @@
 
 resource "aws_eks_cluster" "aws_eks" {
     name = "Tes-Demo"
-    /* role_arn = aws_iam_role.eks_cluster.arn */
+    role_arn = "arn:aws:iam::691575244851:role/EKS"
 
     vpc_config {
         subnet_ids = ["subnet-0925b04d79caa625a","subnet-0adf449365f26d140"]
