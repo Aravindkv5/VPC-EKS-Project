@@ -20,4 +20,4 @@ DEFAULT_TAGS = {
   Env   = "Testing-terraform"
 }
 
-S3-bucket-name = "terraform-state-backend"
+S3_bucket_name = "terraform-state-backend"

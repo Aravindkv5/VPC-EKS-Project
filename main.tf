@@ -31,7 +31,7 @@ module "create_s3_bucket" {
   source           = "./modules/s3"
   bucket_name      = var.S3_bucket_name
   DEFAULT_TAGS     = var.DEFAULT_TAGS
-  STAGE            = var.STAGE
+  # STAGE            = var.STAGE
   
   
   providers = {
