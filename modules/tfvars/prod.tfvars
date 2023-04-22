@@ -1,1 +1,1 @@
-STAGE = "prod"
+Environment = "prod"
