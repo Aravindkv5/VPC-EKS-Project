@@ -19,3 +19,5 @@ DEFAULT_TAGS = {
   Created-Using = "Terraform"
   Env   = "Testing-terraform"
 }
+
+S3-bucket-name = "terraform-state-backend"

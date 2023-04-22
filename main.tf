@@ -27,6 +27,18 @@ module "create_ap-south-2" {
   }
 }
 
+module "create_s3_bucket" {
+  source           = "./modules/s3"
+  bucket_name      = var.S3_bucket_name
+  DEFAULT_TAGS     = var.DEFAULT_TAGS
+  STAGE            = var.STAGE
+  
+  
+  providers = {
+    aws.s3_region = aws.Mumbai
+  }
+}
+
 #Creation of EC2 in Mumbai 
 
 

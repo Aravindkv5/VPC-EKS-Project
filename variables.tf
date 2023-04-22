@@ -20,6 +20,11 @@ variable "DEFAULT_TAGS" {
 
 variable "STAGE" {
   type = string
-  default = "Environment"
+  
   description = "Stage for deployment"
+}
+
+variable "S3_bucket_name" {
+  type = string  
+  description = "S3 Bucket name"
 }
