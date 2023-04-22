@@ -10,7 +10,6 @@ terraform {
 data "aws_region" "current" {
   provider = aws.vpc_region
 }
-
 resource "aws_vpc" "main" {
   provider   = aws.vpc_region
   cidr_block = lookup(var.cidr_block, data.aws_region.current.name)
