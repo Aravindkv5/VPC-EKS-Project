@@ -14,7 +14,7 @@ data "aws_region" "current" {
 resource "aws_s3_bucket" "s3_bucket" {
   provider = aws.s3_region
   bucket   = join("-", [lookup(var.S3-bucket-name, data.aws_region.current.name), var.bucket_name])
-  tags     = merge(tomap({ "Name" : join("-", ["Terraform", lookup(var.S3-bucket-name, data.aws_region.current.name), "bucket"]) }), tomap({ "STAGE" : var.STAGE }), var.DEFAULT_TAGS)
+  tags     = merge(tomap({ "Name" : join("-", ["Terraform", lookup(var.S3-bucket-name, data.aws_region.current.name), "bucket"]) }), var.DEFAULT_TAGS)
 }
 
 resource "aws_s3_bucket_acl" "s3_bucket_acl" {
