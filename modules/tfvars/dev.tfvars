@@ -1,1 +1,1 @@
-Environment = "dev"
+STAGE = "dev"

@@ -1,1 +1,1 @@
-Environment = "qa"
+STAGE = "qa"

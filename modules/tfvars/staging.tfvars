@@ -1,1 +1,1 @@
-Environment = "staging"
+STAGE = "staging"
