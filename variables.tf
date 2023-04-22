@@ -28,3 +28,8 @@ variable "S3_bucket_name" {
   type = string  
   description = "S3 Bucket name"
 }
+
+variable "datacenter_codes" {
+  type = map(string)
+  description = "Data center code values"
+}
