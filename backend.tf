@@ -2,19 +2,16 @@ terraform {
   required_providers {
     aws = {
       source                = "hashicorp/aws"
-      configuration_aliases = [aws.vpc_region]
+      region = "ap-south-1"
     }
   }
 }
 resource "aws_s3_bucket" "bucket" {
-    bucket = "angelo-terraform-state-backend"
+    bucket = "terraform-state-backend"
     versioning {
         enabled = true
     }
-    
-    object_lock_configuration {
-        object_lock_enabled = "Enabled"
-    }
+
     tags = {
         Name = "S3 Remote Terraform State Store"
     }
