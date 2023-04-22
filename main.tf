@@ -27,29 +27,29 @@ module "create_ap-south-2" {
   }
 }
 
+#Creation of EC2 in Mumbai 
+
+
 #Creation of EKS in Mumbai
-module "eks"{
-  source = "./modules/EKS"
-  cluster_name =  "test"
-  providers = {
-    aws.vpc_region = aws.Mumbai
-  }
+# module "eks"{
+#   source = "./modules/EKS"
+#   cluster_name =  "test"
+#   providers = {
+#     aws.vpc_region = aws.Mumbai
+#   }
 
   #aws_iam_role = "trial"
   #aws_eks_node = "EKS"
   
-  
-
-
-}
+#}
 
 #Creation of EKS in Hyderabad
-module "eks"{
-  source = "./modules/EKS"
-  cluster_name =  "test"
-  providers = {
-    aws.vpc_region = aws.Hyderabad
-  }
+# module "eks"{
+#   source = "./modules/EKS"
+#   cluster_name =  "test"
+#   providers = {
+#     aws.vpc_region = aws.Hyderabad
+#   }
 
   #aws_iam_role = "trial"
   #aws_eks_node = "EKS"
