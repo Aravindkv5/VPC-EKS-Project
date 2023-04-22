@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    aws = {
+      source                = "hashicorp/aws"
+      configuration_aliases = [aws.vpc_region]
+    }
+  }
+}
 resource "aws_s3_bucket" "bucket" {
     bucket = "angelo-terraform-state-backend"
     versioning {
