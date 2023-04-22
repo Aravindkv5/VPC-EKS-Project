@@ -26,6 +26,7 @@ variable "STAGE" {
 
 variable "S3_bucket_name" {
   type = string  
+  default = "terraform-state-backend"
   description = "S3 Bucket name"
 }
 
