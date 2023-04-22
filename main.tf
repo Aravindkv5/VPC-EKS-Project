@@ -48,6 +48,7 @@ module "create_ap-south-2" {
 #   source = "./modules/EKS"
 #   cluster_name =  "test"
 #   providers = {
+
 #     aws.vpc_region = aws.Hyderabad
 #   }
 
@@ -57,4 +58,4 @@ module "create_ap-south-2" {
   
 
 
-}
+#}
