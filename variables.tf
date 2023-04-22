@@ -20,7 +20,7 @@ variable "DEFAULT_TAGS" {
 
 variable "STAGE" {
   type = string
-  
+  default = "Env"
   description = "Stage for deployment"
 }
 
