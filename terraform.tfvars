@@ -21,3 +21,8 @@ DEFAULT_TAGS = {
 }
 
 S3_bucket_name = "terraform-state-backend"
+
+datacenter_codes = {
+  "ap-south-1" : "Mumbai"
+  "ap-south-2" : "Hyderabad"
+}
